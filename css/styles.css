@@ -563,12 +563,11 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   color: var(--dark-txt-cl);
   background-color: transparent;
-  transition: color var(--timeing), border var(--timeing);
+  transition: color var(--timeing);
 }
 .modal-btn:hover,
 .modal-btn:focus {
   color: var(--accent-txt-cl);
-  border: 1px solid rgba(33, 150, 243, 0.1);
 }
 .modal-btn-icon {
   fill: currentColor;
