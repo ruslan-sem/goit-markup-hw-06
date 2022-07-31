@@ -383,7 +383,7 @@ img {
 }
 .footer-container {
   display: flex;
-  gap: 70px;
+  /* gap: 70px; */
   align-items: baseline;
 }
 .footer .logo {
@@ -395,6 +395,10 @@ img {
 }
 .address-item:not(:last-child) {
   margin-bottom: 9px;
+}
+.footer-subscribe {
+  margin-left: 70px;
+  margin-right: 93px;
 }
 .footer-subscribe-title {
   font-weight: 700;
@@ -425,6 +429,39 @@ img {
 .footer .social-link:focus {
   /* color: var(--light-txt-cl); */
   background-color: var(--accent-txt-cl);
+}
+.footer-form {
+  display: flex;
+  gap: 12px;
+}
+.footer-email {
+  min-width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 15px 16px;
+  color: var(--light-link-cl);
+}
+.footer-btn {
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background: var(--accent-txt-cl);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: var(--light-txt-cl);
+}
+.footer-btn-icon {
+  fill: currentColor;
 }
 
 /* portfolio */
