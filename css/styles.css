@@ -383,7 +383,7 @@ img {
 }
 .footer-container {
   display: flex;
-  /* gap: 70px; */
+  gap: 70px;
   align-items: baseline;
 }
 .footer .logo {
@@ -396,9 +396,11 @@ img {
 .address-item:not(:last-child) {
   margin-bottom: 9px;
 }
-.footer-subscribe {
-  margin-left: 70px;
-  margin-right: 93px;
+.footer-subscribe-group {
+  display: flex;
+  gap: 93px;
+  /* margin-left: 70px;
+  margin-right: 93px; */
 }
 .footer-subscribe-title {
   font-weight: 700;
@@ -439,6 +441,7 @@ img {
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  outline: transparent;
   background-color: transparent;
   padding: 15px 16px;
   color: var(--light-link-cl);
