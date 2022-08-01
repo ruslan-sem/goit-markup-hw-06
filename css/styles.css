@@ -634,7 +634,7 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: calc(23 / 20);
-  text-align: center;
+  /* text-align: center; */
   color: var(--dark-txt-cl);
 }
 .register-form-group {
@@ -663,6 +663,7 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
+  transition: border var(--timeing);
 }
 .register-form-input {
   padding-left: 42px;
@@ -671,14 +672,50 @@ img {
   resize: none;
   height: 120px;
 }
+.register-form-message::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.register-form-input:focus,
+.register-form-message:focus {
+  border: 1px solid var(--accent-txt-cl);
+}
 .register-form-icon {
   position: absolute;
   bottom: 11px;
   left: 12px;
+  transition: fill var(--timeing);
+}
+.register-form-input:focus + .register-form-icon {
+  fill: var(--accent-txt-cl);
 }
 .register-form-agree {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
   margin-bottom: 30px;
+}
+.register-icon-check {
+  opacity: 0;
+  transition: opacity var(--timeing);
+}
+.register-checkbox:checked + .register-icon .register-icon-uncheck {
+  opacity: 0;
+  transition: opacity var(--timeing);
+}
+.register-checkbox:checked + .register-icon .register-icon-check {
+  opacity: 1;
+}
+.register-form-agree-text {
+  user-select: none;
+}
+.register-form-agree-link {
+  color: var(--accent-txt-cl);
+  text-underline-position: under;
 }
 .register-form-btn {
   /* width: 200px;
